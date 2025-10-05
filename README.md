@@ -66,4 +66,4 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
     :return: int - maximum value you can get.
     """
 
-    return 
+    return int((budget / (exchange_rate * (1 + spread / 100)) // denomination) * denomination)
